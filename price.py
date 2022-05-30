@@ -1,6 +1,6 @@
 def shopping(shop_file):
     shop_dict = {} # 생성할 사전 객체
-    with open('data/'+shop_file) as f:
+    with open(code_path.name+'/'+shop_file) as f:
         for line in f:
             try:
                 name, price = line.strip().split()
@@ -14,7 +14,7 @@ def shopping(shop_file):
 
 def item_price(shop_file, item):
     shop_dict = {} # 생성할 사전 객체
-    with open('data/'+shop_file) as f:
+    with open(code_path.name+'/'+shop_file) as f:
         for line in f:
             try:
                 name, price = line.strip().split()
